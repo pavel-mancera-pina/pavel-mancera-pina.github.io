@@ -17,9 +17,9 @@
 				--light-color: #ecf0f1;
 			}
 			
-			/* Header styling */
+			/* Header styling - made more transparent */
 			#header {
-				background: rgba(44, 62, 80, 0.9);
+				background: rgba(44, 62, 80, 0.85);
 			}
 			
 			/* Card styling */
@@ -106,13 +106,23 @@
 				border: 3px solid white;
 			}
 			
-			/* Publication cards */
+			/* Publication cards - fixed contrast */
 			.publication-card {
-				background: var(--light-color);
+				background: #f8f9fa;
 				padding: 1rem;
 				margin: 1rem 0;
 				border-left: 4px solid var(--primary-color);
 				border-radius: 0 5px 5px 0;
+				color: #333 !important;
+			}
+			
+			.publication-card a {
+				color: var(--primary-color) !important;
+			}
+			
+			/* Research section spacing */
+			.research-section {
+				margin-bottom: 2rem;
 			}
 			
 			/* Responsive adjustments */
@@ -184,31 +194,33 @@
 					</div>
 					
 					<h3>Research Interests</h3>
-					<p>My work focuses on understanding galaxy formation and evolution through:</p>
-					<ul>
-						<li>Galaxy kinematics and dynamics</li>
-						<li>Dark matter distribution in galaxies</li>
-						<li>Angular momentum evolution</li>
-						<li>Baryon cycle in galaxies</li>
-						<li>Connection between baryonic and dark matter components</li>
-					</ul>
+					<p>I have very broad interests in galaxy formation and evolution. My expertise is in the kinematics and dynamics of galaxies (especially discs), but in general I am very interested in the processes regulating the baryon cycle of galaxies and the connection between the observed properties of galaxies and the theoretical expectations for their host dark matter haloes. For more details, visit my <a href="#research">Research section</a>.</p>
 					
 					<h3>Publications</h3>
 					<div class="publication-card">
-						<p>Find my publications on ADS:</p>
-						<a href="https://ui.adsabs.harvard.edu/user/libraries/4o0VeryyTWaF_zNqoaZyRA" class="button small">First-author Papers</a>
-						<a href="https://ui.adsabs.harvard.edu/user/libraries/HQl90vsqTvioqi7Chl3iDA" class="button small">Co-authored Papers</a>
+						<p>In these links, you can find ADS libraries to my publications as 
+						<a href="https://ui.adsabs.harvard.edu/user/libraries/4o0VeryyTWaF_zNqoaZyRA">First-author</a>
+						or as
+						<a href="https://ui.adsabs.harvard.edu/user/libraries/HQl90vsqTvioqi7Chl3iDA">Co-author</a>.</p>
 					</div>
 					
 					<h3>Personal</h3>
-					<p>Originally from Mexico, I've lived in the Netherlands since 2016. Outside astronomy, I enjoy:</p>
-					<ul>
-						<li>Reading (Paul Auster, Günter Grass)</li>
-						<li>Classical music (Tchaikovsky's violin concerto)</li>
-						<li>Board games and sports (squash, basketball)</li>
-						<li>Cinema (especially Hugh Grant films)</li>
-						<li>Good food and wine (Italian Sangiovese)</li>
-					</ul>
+					<p>A few more personal things about myself in case you were curious...</p>
+					<p>I am from Mexico, and from the moment I was born and until I was six or so, I was one of the 
+					&#126; 18000000 inhabitants of the marvellous, wonderful, and chaotic Mexico City. After that, I grew up in 
+					a beautiful city called
+					<a href="https://www.google.com/search?q=xalapa&client=firefox-b-d&sxsrf=ALiCzsa0ygA2RGuI8IED8uUpuO2PvLQ-uw:1665646639182&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiKsv-h2dz6AhUVH-wKHRfuAbEQ_AUoAXoECAIQAw&biw=1440&bih=805&dpr=2.4">Xalapa</a>,
+					where I did a BSc in Physics, although I returned to Mexico City to work on my BSc thesis at the Institute of Astronomy of 
+					the National University of Mexico.</p>
+					<p>After that, I came to the Netherlands (lovely weather, amazing good, why not) to pursue an MSc degree in Astronomy at the University of
+					Groningen. I liked Groningen so much (er gaat niets boven Groningen!) that I stayed four more years for my PhD, which I obtained with 
+					cum laude distinction in the summer of 2022. As of September 2022, I moved to Leiden to hold a 
+					postdoctoral position at Leiden Observatory.</p>
+					<p>I love science but also enjoy many other things. What I love doing the most is reading (Paul Auster is my favourite writer, 
+					The Tin Drum (G. Grass) arguably my favourite book, but you know one cannot just say what is their favourite book without feeling remorse for the others), 
+					and I also like a lot classical music (nothing like Tchaikovsky's violin concert), playing boardgames with friends (and ideally, but 
+					not necessarily, remaining friends afterwards), going to the cinema (even better if it's a Hugh Grant movie), as well as playing squash and basketball 
+					(go Spurs go!). Good food and nice wines (especially Italian wines, like a good Sangiovese) are also a must in my life.</p>
 				</article>
 
 				<article id="research">
@@ -217,55 +229,75 @@
 						<img src="images/chichenitza.jpg" alt="El Caracol Observatory"/>
 					</span>
 					
-					<p>My research explores galaxy evolution through observational astronomy, using advanced telescopes to study galaxy dynamics across cosmic time.</p>
+					<p>My field of research is galaxy evolution. I am fascinated by the complexity and yet universality of the laws of physics 
+					that shape galaxies, and I am committed to the challenging task of understanding them. In particular, I am interested 
+					in how are the fundamental parameters of galaxies connected to each other, what are the main physical mechanisms 
+					regulating galaxy evolution, and how is the link between the baryonic component of galaxies and their host dark matter haloes.</p>
 					
-					<section>
-						<h3>Ultra-Diffuse Galaxies</h3>
+					<p>My work is mostly observational (tho always try to compare with simulations!), and I use some of the most advanced 
+					facilities, namely optical and radio telescopes, often located in wonderful observatories. In the picture above, you can see
+						one of my favorite observatories, <a href="https://en.wikipedia.org/wiki/El_Caracol,_Chichen_Itza">El Caracol</a>, 
+						in the Mayan city of Chichén-Itzá. The observatory is not used anymore, but 
+						I am very proud to come from a country (Mexico) with such a rich astronomical heritage.</p>
+					
+					<div class="research-section">
+						<h3>Ultra-diffuse galaxies</h3>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<div class="col-12"><span class="image fit"><img src="images/udgs_website.jpg" alt="UDG Research" /></span></div>
 							</div>
 						</div>
-						<p>My work on ultra-diffuse galaxies (UDGs) has revealed:</p>
-						<ul>
-							<li>Gas-rich UDGs deviate from the baryonic Tully-Fisher relation</li>
-							<li>These galaxies have unusually low dark matter densities</li>
-							<li>They may have baryon fractions approaching cosmological limits</li>
-						</ul>
+						<p>Ultra-diffuse galaxies (UDGs) have the stellar mass of dwarf galaxies but light distributions 
+						similar to big spirals like the Milky Way, which makes them very diffuse. Their formation mechanisms (how do you form such an 
+						extended light distribution with so little stellar mass) have been widely discussed in the literature over the last years, but no consensus
+						has been reached. I have tackled the question from an observational perspective, looking both at the photometrical 
+						properties of UDGs in nearby galaxy clusters, and especially at the gas dynamics of isolated UDGs.</p>
+						<p>One of the main findings of my research is that gas-rich UDGs (see left panel in the figure above) deviate from the baryonic 
+						Tully-Fisher relation (see right panel), being this the first known galaxy population to do so. The position in the relation suggests that 
+						the galaxies have baryon fractions approaching the cosmological limit. Our kinematic observations have also unveiled that gas-rich UDGs seem 
+						to have dark matter haloes with inner densities much lower than expected in CDM.</p>
 						<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.3230M/abstract" class="button small">Read the Paper</a>
-					</section>
+					</div>
 					
-					<section>
-						<h3>Angular Momentum in Galaxies</h3>
+					<div class="research-section" style="margin-top: 2rem;">
+						<h3>Angular momentum in disc galaxies</h3>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<div class="col-12"><span class="image fit"><img src="images/fall_cortese.jpg" alt="Angular Momentum Research" /></span></div>
 							</div>
 						</div>
-						<p>Key discoveries about angular momentum:</p>
-						<ul>
-							<li>Detailed measurements of specific angular momentum across galaxy masses</li>
-							<li>Tight relation between mass, angular momentum, and gas fraction</li>
-							<li>Important constraints for galaxy formation models</li>
-						</ul>
+						<p>From very early models of galaxy formation it became clear that 
+						together with the mass, angular momentum is a fundamental parameter regulating galaxy evolution. For example, the existence of the 
+						Fall relation (see image above) clearly shows the tight link between mass (M), specific angular momentum (j), and morphology.</p>
+						<p>Together with my collaborators, I have been studying the angular momentum in nearby disc galaxies, obtaining some of the 
+						most detailed measurements of their stellar, gas, and baryonic specific angular momentum. As shown above, we have characterised 
+						the j-M relations across a wide range of mass, with the largest high-quality sample available in the literature. Moreover, we have 
+						discovered one of the tightest known scaling relations for disc galaxies, connecting their baryonic mass, baryonic specific angular 
+						momentum, and the gas fraction of galaxies. This is quite remarkable, given the large number of processes that can affect the angular 
+						momentum reservoir of galaxies, such as feedback, different gas accretion histories, mergers, or dynamical friction, and yet it all results
+						in a very tight scaling relation. Our observations provide clear observational tests for models and simulations aiming to reproduce 
+						realistic galaxies.</p>
 						<a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..76M/abstract" class="button small">Read the Paper</a>
-					</section>
+					</div>
 					
-					<section>
-						<h3>Gas Scale Heights</h3>
+					<div class="research-section" style="margin-top: 2rem;">
+						<h3>The scaleheights of gas discs</h3>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<div class="col-12"><span class="image fit"><img src="images/scaleheight.png" alt="Gas Scale Height Research" /></span></div>
 							</div>
 						</div>
-						<p>My work on gas discs has shown:</p>
-						<ul>
-							<li>Gas discs are thicker than often assumed</li>
-							<li>Discs flare with radius due to pressure-gravity balance</li>
-							<li>New method for estimating flaring and mass models</li>
-						</ul>
+						<p>While the gas discs of late-type galaxies are often assumed to be thin, observations in edge-on 
+						galaxies show that the discs are actually thick, with a scaleheight that increases as a function of radius, i.e. the discs are flared. 
+						This flaring is a direct consequence of the balance between gas pressure and gravity (see sketch above), and we can use the equations of vertical hydrostatic 
+						equilibrium to estimate the flaring in any galaxy.</p>
+						<p>During my research, I have designed a method to estimate the flaring of nearby disc galaxies (based on the equations of vertical
+						hydrostatic equilibrium) while simultaneously deriving their mass model based on rotation curve decomposition. This has allowed me to 
+						obtain some of the most detailed scale heights and mass models of massive and dwarf late-type galaxies. These mass 
+						models are also an excellent tool to test different models of galaxy evolution, as they provide clear constraints on the parameters
+						of the dark matter haloes of our galaxy sample.</p>
 						<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.514.3329M/abstract" class="button small">Read the Paper</a>
-					</section>
+					</div>
 				</article>
 
 				<article id="downloads">
@@ -273,6 +305,10 @@
 					<span class="image main">
 						<img src="images/me_mountain.jpg" alt="Pavel in the mountains"/>
 					</span>
+					
+					<p>Throwing some data at you... In this section, you can find some interesting data associated with my published papers. 
+					     If I used some data you are interested in that are not here, please get in touch and I will be
+					     happy to share them!</p>
 					
 					<div class="table-wrapper">
 						<table>
@@ -320,33 +356,42 @@
 						<img src="images/starrynight1.jpg" alt="Starry Night"/>
 					</span>
 					
-					<div class="press-highlights">
-						<div class="press-item">
-							<h3>NWO Veni Fellowship Award</h3>
-							<p>Recently awarded a prestigious VENI Fellowship to study galaxy dynamics and dark matter. <a href="https://www.universiteitleiden.nl/en/news/2023/08/uncovering-galaxy-evolution-and-the-nature-of-dark-matter">Read more</a></p>
-							<span class="image fit"><img src="images/vanswinderen.jpg" alt="Van Swinderen Prize"/></span>
-						</div>
-						
-						<div class="press-item">
-							<h3>Van Swinderen Prize 2022</h3>
-							<p>Honored with the Van Swinderen Prize for outstanding PhD research. <a href="https://www.kng-groningen.nl/van-swinderenprijs/">Details</a></p>
-						</div>
-						
-						<div class="press-item">
-							<h3>Dark Matter-Deficient Galaxies</h3>
-							<p>Media coverage of our UDG research:</p>
-							<ul class="actions">
-								<li><a href="https://www.scientificamerican.com/article/dark-matter-may-be-missing-from-this-newfound-galaxy-astronomers-say/" class="button small">Scientific American</a></li>
-								<li><a href="https://www.wired.com/story/astronomers-discover-a-strange-galaxy-without-dark-matter/" class="button small">WIRED</a></li>
-								<li><a href="https://www.astronomie.nl/nieuws/zelfs-na-40-uur-extra-scherp-meten-geen-spoor-van-donkere-materie-bij-sterrenstelsel-agc-114905-3058" class="button small">NOVA (Dutch)</a></li>
-							</ul>
-							<span class="image fit"><img src="images/agc114905_pr.png" alt="UDG Press Image"/></span>
-						</div>
-						
-						<div class="press-item">
-							<h3>Six Galaxies with Little Dark Matter</h3>
-							<p>Covered in <a href="https://www.rug.nl/news/2019/09/zes-sterrenstelsels-ontdekt-met-amper-donkere-materie?lang=en">English</a> and <a href="https://www.astronomie.nl/nieuws/zes-sterrenstelsels-ontdekt-met-amper-donkere-materie-1407">Dutch</a> media.</p>
-						</div>
+					<p>Some results from my research have been picked up by popular media as press releases. Here you can find some of them. You can also find some news about me or my research.</p>
+					
+					<div class="press-item">
+						<h3>NWO Veni Fellowship Award</h3>
+						<p>Recently, I have been awarded a VENI Fellowship by the Dutch Research Council (NWO). This fellowship funds my independent research programme aimed at measuring the dynamics of galaxies through cosmic time using the most advanced observational facilities to obtain an unprecedented view into the role of the mysterious dark matter in shaping galaxies.</p>
+						<a href="https://www.universiteitleiden.nl/en/news/2023/08/uncovering-galaxy-evolution-and-the-nature-of-dark-matter?fbclid=IwAR2riYbCKnY8QXaRsydz2lgjdRfoMoMc6c_Db92oC7VrSAw--qckMngu4l8" class="button small">Read More</a>
+						<span class="image fit"><img src="images/vanswinderen.jpg" alt="Van Swinderen Prize"/></span>
+					</div>
+					
+					<div class="press-item" style="margin-top: 2rem;">
+						<h3>Van Swinderen Prize 2022</h3>
+						<p>I won the 2022 Van Swinderen Prize! Thanks to the Koninklijk Natuurkundig Genootschap:)</p>
+						<a href="https://www.kng-groningen.nl/van-swinderenprijs/" class="button small">More Info</a>
+					</div>
+					
+					<div class="press-item" style="margin-top: 2rem;">
+						<h3>Dark Matter-Deficient Galaxies</h3>
+						<p>An ultra-diffuse galaxy challenging the cold dark matter model? Articles from:</p>
+						<ul class="actions">
+							<li><a href="https://www.scientificamerican.com/article/dark-matter-may-be-missing-from-this-newfound-galaxy-astronomers-say/" class="button small">Scientific American</a></li>
+							<li><a href="https://www.wired.com/story/astronomers-discover-a-strange-galaxy-without-dark-matter/" class="button small">WIRED</a></li>
+							<li><a href="https://www.popsci.com/science/galaxy-missing-dark-matter/" class="button small">Popular Science</a></li>
+							<li><a href="https://ras.ac.uk/news-and-press/research-highlights/evidence-emerges-dark-matter-free-galaxies" class="button small">MNRAS</a></li>
+							<li><a href="https://www.astronomie.nl/nieuws/zelfs-na-40-uur-extra-scherp-meten-geen-spoor-van-donkere-materie-bij-sterrenstelsel-agc-114905-3058" class="button small">NOVA (Dutch)</a></li>
+						</ul>
+						<p>There are many more results from different media if you look for the galaxy AGC 114905, including press notes in Spanish, Italian, French, Portuguese, Chinese, German, among many others.</p>
+						<span class="image fit"><img src="images/agc114905_pr.png" alt="UDG Press Image"/></span>
+					</div>
+					
+					<div class="press-item" style="margin-top: 2rem;">
+						<h3>Six Galaxies with Little Dark Matter</h3>
+						<p>Six galaxies discovered to have little dark matter, read it in:</p>
+						<ul class="actions">
+							<li><a href="https://www.rug.nl/news/2019/09/zes-sterrenstelsels-ontdekt-met-amper-donkere-materie?lang=en" class="button small">English</a></li>
+							<li><a href="https://www.astronomie.nl/nieuws/zes-sterrenstelsels-ontdekt-met-amper-donkere-materie-1407" class="button small">Dutch</a></li>
+						</ul>
 					</div>
 				</article>
 
