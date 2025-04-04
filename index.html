@@ -1,555 +1,408 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
-
-
 <html>
-	<!-- 	This is the "Head" of the HTML document.
-		It contains information that isn't displayed on the actual page, but is useful
-		for the web browser when loading the page	
-	-->
 	<head>
-		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
-		<title>Pavel E. Mancera Pi&#241;a's website </title>
+		<title>Pavel E. Mancera Piña | Astrophysicist</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
-			 If you want to edit the styling of this page, you should edit the file assets/css/main.css
-			 If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
-			 <link rel="stylesheet" href="assets/css/my-new-css-file.css"/> 
-		-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- 	In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
-			will load a separate set of CSS stylings from the file assets/css/noscript.css
-			Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
-			available. 
-		-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	
 		<meta name="google-site-verification" content="BvSSNoffoAMwrO8FZVqQHL1AizzvzOjxkJzyCi57QrU" />
-		
+		<style>
+			:root {
+				--primary-color: #3498db;
+				--secondary-color: #2ecc71;
+				--accent-color: #e74c3c;
+				--dark-color: #2c3e50;
+				--light-color: #ecf0f1;
+			}
+			
+			/* Header styling */
+			#header {
+				background: rgba(44, 62, 80, 0.9);
+			}
+			
+			/* Card styling */
+			article {
+				background: white;
+				border-radius: 10px;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+				padding: 2.5rem;
+			}
+			
+			/* Section headers */
+			h2.major {
+				color: var(--primary-color);
+				border-bottom: 3px solid var(--secondary-color);
+				padding-bottom: 0.5rem;
+			}
+			
+			/* Navigation buttons */
+			nav ul li a {
+				background: var(--primary-color);
+				color: white !important;
+				border-radius: 5px;
+				transition: all 0.3s ease;
+			}
+			
+			nav ul li a:hover {
+				background: var(--secondary-color);
+				transform: translateY(-3px);
+			}
+			
+			/* Profile image */
+			#header .inner img {
+				border: 5px solid white;
+				box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+			}
+			
+			/* Footer styling */
+			#footer {
+				background: var(--dark-color);
+				color: white;
+				padding: 2rem;
+			}
+			
+			/* Colorful highlights */
+			.highlight {
+				background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+				-webkit-background-clip: text;
+				background-clip: text;
+				color: transparent;
+				font-weight: bold;
+			}
+			
+			/* Timeline styling */
+			.timeline {
+				position: relative;
+				padding-left: 30px;
+				margin: 1em 0;
+			}
+			
+			.timeline:before {
+				content: '';
+				position: absolute;
+				left: 6px;
+				top: 0;
+				bottom: 0;
+				width: 3px;
+				background: var(--primary-color);
+			}
+			
+			.timeline-item {
+				position: relative;
+				margin-bottom: 1.5em;
+			}
+			
+			.timeline-item:before {
+				content: '';
+				position: absolute;
+				left: -30px;
+				top: 5px;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background: var(--secondary-color);
+				border: 3px solid white;
+			}
+			
+			/* Publication cards */
+			.publication-card {
+				background: var(--light-color);
+				padding: 1rem;
+				margin: 1rem 0;
+				border-left: 4px solid var(--primary-color);
+				border-radius: 0 5px 5px 0;
+			}
+			
+			/* Responsive adjustments */
+			@media screen and (max-width: 736px) {
+				article {
+					padding: 1.5rem;
+				}
+			}
+		</style>
 	</head>
-	<!-- The body is the location where your site's content will go -->
 	<body class="is-preload">
 
-			<!-- This "div" wraps around all of our content and just changes how things are layed out -->
-			<div id="wrapper">
+		<div id="wrapper">
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1 class="highlight">Pavel E. Mancera Piña</h1>
+						<img src="images/pavel_astro.jpg" style="width:280px; height:373px; object-fit: cover; border-radius: 10px;">
+						<p style="font-size: 1.2em;">
+							<span class="highlight">Astrophysicist</span> <br> 
+							Postdoctoral Veni Fellow at Leiden Observatory
+						</p>
+						<p>
+							<a href="images/CV_PavelManceraPiña.pdf" target="_blank" class="button primary">Curriculum Vitae</a>
+						</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#about">About Me</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#downloads">Downloads</a></li>
+						<li><a href="#press">News & Press</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
 
-					<!-- This is where the content that appears on page load exists -->
-					<header id="header">
-						<!-- This is the main content of the front page -->
-						<div class="content">
-							<div class="inner">
-								<!-- Here is a heading where you can put your name -->
-								<h1>
-									Pavel E. Mancera Pi&#241;a
-								</h1>
-								<!-- 	Here is an image where you can put a picture of you. 
-									You can change the width and height attributes below to change how large
-									your image is.
+			<div id="main">
+				<article id="about">
+					<h2 class="major">About Me</h2>
+					<span class="image main">
+						<img src="images/me_ghent.jpg" alt="Pavel in Ghent"/>
+					</span>
+					
+					<p>Hi, I am Pavel. Welcome to my website! I am an astrophysicist interested in galaxy formation and evolution. I am a <a href="https://www.nwo.nl/en/calls/nwo-talent-programme" class="highlight">NWO-Veni Fellow</a> at Leiden Observatory studying the dynamics of galaxies through cosmic time.</p>
+					
+					<h3>Academic Journey</h3>
+					<div class="timeline">
+						<div class="timeline-item">
+							<h4>Postdoctoral Positions</h4>
+							<p><strong>2023-present:</strong> NWO Veni Fellowship at Leiden Observatory</p>
+							<p><strong>2022-2023:</strong> Postdoctoral position at Leiden Observatory with <a href="https://home.strw.leidenuniv.nl/~kriek/">Mariska Kriek</a></p>
+						</div>
+						<div class="timeline-item">
+							<h4>Education</h4>
+							<p><strong>2018-2022:</strong> PhD (cum laude) in Astrophysics, University of Groningen<br>
+							Thesis: "Dark matter and angular momentum in nearby disc galaxies"<br>
+							Advisors: <a href="https://www.filippofraternali.com/">Filippo Fraternali</a>, Tom Oosterloo, Betsey Adams</p>
+							
+							<p><strong>2016-2018:</strong> MSc in Astronomy, University of Groningen<br>
+							Thesis: "The evolution of ultra-diffuse galaxies in nearby galaxy clusters"<br>
+							Advisor: Reynier Peletier</p>
+							
+							<p><strong>2011-2016:</strong> BSc in Physics, Universidad Veracruzana<br>
+							Thesis: "The globular cluster NGC 6229 as seen from its variable stars"<br>
+							Advisor: Armando Arellano Ferro</p>
+						</div>
+					</div>
+					
+					<h3>Research Interests</h3>
+					<p>My work focuses on understanding galaxy formation and evolution through:</p>
+					<ul>
+						<li>Galaxy kinematics and dynamics</li>
+						<li>Dark matter distribution in galaxies</li>
+						<li>Angular momentum evolution</li>
+						<li>Baryon cycle in galaxies</li>
+						<li>Connection between baryonic and dark matter components</li>
+					</ul>
+					
+					<h3>Publications</h3>
+					<div class="publication-card">
+						<p>Find my publications on ADS:</p>
+						<a href="https://ui.adsabs.harvard.edu/user/libraries/4o0VeryyTWaF_zNqoaZyRA" class="button small">First-author Papers</a>
+						<a href="https://ui.adsabs.harvard.edu/user/libraries/HQl90vsqTvioqi7Chl3iDA" class="button small">Co-authored Papers</a>
+					</div>
+					
+					<h3>Personal</h3>
+					<p>Originally from Mexico, I've lived in the Netherlands since 2016. Outside astronomy, I enjoy:</p>
+					<ul>
+						<li>Reading (Paul Auster, Günter Grass)</li>
+						<li>Classical music (Tchaikovsky's violin concerto)</li>
+						<li>Board games and sports (squash, basketball)</li>
+						<li>Cinema (especially Hugh Grant films)</li>
+						<li>Good food and wine (Italian Sangiovese)</li>
+					</ul>
+				</article>
 
-									Try adding "border-radius: 50%;" to the style attribute.
-								-->
-								<!-- <img src="images/me.jpg" style="width:280px; height:280px; object-fit: cover;"> -->
-							        <img src="images/pavel_astro.jpg" style="width:280px; height:373px; object-fit: cover;">
-								
-								<!-- 	Here is a paragraph where you can put your position and institution, or
-									a short line about yourself.
-								-->
-								<p>
-								    <b>Astrophysicist</b> <br> Postdoctoral Veni Fellow at Leiden Observatory
-									
-								</p>
-								<!-- Here is a paragraph where you can put a link to your CV -->
-								<p>
-									<!-- Note you will want to change where this points to! -->
-									<a href="images/CV_PavelManceraPiña.pdf" target="_blank">Curriculum Vitae</a>
-								</p>
+				<article id="research">
+					<h2 class="major">Research</h2>
+					<span class="image main">
+						<img src="images/chichenitza.jpg" alt="El Caracol Observatory"/>
+					</span>
+					
+					<p>My research explores galaxy evolution through observational astronomy, using advanced telescopes to study galaxy dynamics across cosmic time.</p>
+					
+					<section>
+						<h3>Ultra-Diffuse Galaxies</h3>
+						<div class="box alt">
+							<div class="row gtr-uniform">
+								<div class="col-12"><span class="image fit"><img src="images/udgs_website.jpg" alt="UDG Research" /></span></div>
 							</div>
 						</div>
-						<!-- This is the navigation menu -->
-						<nav>
-							<!-- This element makes an "Unordered List" -->
-							<ul>
-								<!-- This is a "List Item" -->
-								<li>
-									<!-- 	Note that this links to #about, which will move the page to wherever
-										the element with the id "about" exists.
-									-->
-									<a href="#about">About Me</a>
-								</li>
-								<li>
-									<a href="#research">Research</a>
-								</li>
-								<li>
-									<a href="#downloads">Downloads</a>
-								</li>
-								<li>
-									<a href="#contact">Contact</a>
-								</li>
-								<li>
-									<a href="#press">News & press releases</a>
-								</li>
-								<!-- 	You can add another button to your navigation menu by adding
-									another List Item with a link inside of it.
-								-->
-								<!-- <li>
-									<a href="images/Astronomy.jpg">My CV</a>
-								</li> -->
-							</ul>
-						</nav>
-					</header>
+						<p>My work on ultra-diffuse galaxies (UDGs) has revealed:</p>
+						<ul>
+							<li>Gas-rich UDGs deviate from the baryonic Tully-Fisher relation</li>
+							<li>These galaxies have unusually low dark matter densities</li>
+							<li>They may have baryon fractions approaching cosmological limits</li>
+						</ul>
+						<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.3230M/abstract" class="button small">Read the Paper</a>
+					</section>
+					
+					<section>
+						<h3>Angular Momentum in Galaxies</h3>
+						<div class="box alt">
+							<div class="row gtr-uniform">
+								<div class="col-12"><span class="image fit"><img src="images/fall_cortese.jpg" alt="Angular Momentum Research" /></span></div>
+							</div>
+						</div>
+						<p>Key discoveries about angular momentum:</p>
+						<ul>
+							<li>Detailed measurements of specific angular momentum across galaxy masses</li>
+							<li>Tight relation between mass, angular momentum, and gas fraction</li>
+							<li>Important constraints for galaxy formation models</li>
+						</ul>
+						<a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..76M/abstract" class="button small">Read the Paper</a>
+					</section>
+					
+					<section>
+						<h3>Gas Scale Heights</h3>
+						<div class="box alt">
+							<div class="row gtr-uniform">
+								<div class="col-12"><span class="image fit"><img src="images/scaleheight.png" alt="Gas Scale Height Research" /></span></div>
+							</div>
+						</div>
+						<p>My work on gas discs has shown:</p>
+						<ul>
+							<li>Gas discs are thicker than often assumed</li>
+							<li>Discs flare with radius due to pressure-gravity balance</li>
+							<li>New method for estimating flaring and mass models</li>
+						</ul>
+						<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.514.3329M/abstract" class="button small">Read the Paper</a>
+					</section>
+				</article>
 
-					<!-- These are the "cards" that appear when you click the buttons on the main page -->
-					<div id="main">
-						<!-- 	Here is the "About Me" card. Note it has the id "about", which the previous 
-							button links to.
-						-->
-						<article id="about">
-							<h2 class="major">About Me</h2>
-							<!-- Here is an image that you can customize for this page -->
-							<span class="image main">
-								<img src="images/me_ghent.jpg" alt=""/>
-							</span>
-							<!-- Here are three paragraphs where you can fill out information about yourself -->
-							<p> 
-								<p>
-								Hi, I am Pavel. Welcome to my website! I am an astrophysicist interested in galaxy formation and evolution. 
-								I am a <a href="https://www.nwo.nl/en/calls/nwo-talent-programme">NWO-Veni</a> Fellow at Leiden Observatory. I
-								study the dynamics of galaxies through cosmic time.
-								Here, you can find some general information about me, and if you want to know more about my research, please follow 
-								<a href="#research">this link</a>.
-								</p>
-								
-								<!-- Items contained in <b> tags are bolded! -->
-								<b>Positions after PhD:</b>
-							<br> &#8211; 2023-->: Postdoctoral 
-								<a href="https://www.nwo.nl/en/calls/nwo-talent-programme">NWO Veni Fellowship</a>.
-							<br>
-							
-							<br> &#8211; 2022-2023: Postdoctoral position at Leiden Observatory within the group of 
-								<a href="https://home.strw.leidenuniv.nl/~kriek/">Mariska Kriek</a>.
-							<br>
-							<br>
-								<b>Education:</b>
-							<br> &#8211; 2018-2022: <b> PhD (cum laude) in Astrophysics at the University of Groningen</b>. 
-							Thesis: "Dark matter and angular momentum in nearby disc galaxies".
-							Advisors: <a href="https://www.filippofraternali.com/">Filippo Fraternali</a>, Tom Ooosterloo, Betsey Adams.
-							<br>
-							<br> &#8211; 2016-2018: <b> MSc in Astronomy at the University of Groningen</b>. 
-							Thesis: "The evolution of ultra-diffuse galaxies in nearby galaxy clusters".
-							Advisor: Reynier Peletier
-							<br>
-							<br> &#8211; 2011-2016: <b> BSc in Physics at the Universidad Veracruzana</b>. 
-							Thesis: "The globular cluster NGC 6229 as seen from its variable stars.
-							Advisor: Armando Arellano Ferro
-							
-							</p>
-							<p>
-								<b>Research Interests:</b> 
-								<br>I have very broad interests in galaxy formation and evolution. 
-								My expertise is in the kinematics and dynamics of galaxies (especially discs), but in general
-								I am very interested in the processes regulating the baryon cycle of galaxies and the connection
-								between the observed properties of galaxies and the theoretical expectations for their host dark matter haloes. 
-								For more details, visit my <a href="#research">Research section</a>.
-							</p>
-							<p>     
-								<a <b>Publications:</b> </a>
-								<id="publications">
-								<br> In these links, you can find ADS libraries to my publications as 
-								<a href="https://ui.adsabs.harvard.edu/user/libraries/4o0VeryyTWaF_zNqoaZyRA">First-author</a>
-								or as
-								<a href="https://ui.adsabs.harvard.edu/user/libraries/HQl90vsqTvioqi7Chl3iDA">Co-author</a>.
-							</p>
-						
-							<p>
-								<b>Me:</b>
-								<br> A few more personal things about myself in case you were curious...
-								<br> I am from Mexico, and from the moment I was born and until I was six or so, I was one of the 
-								&#126; 18000000 inhabitants of the marvellous, wonderful, and chaotic Mexico City. After that, I grew up in 
-								a beautiful city called
-								<a href="https://www.google.com/search?q=xalapa&client=firefox-b-d&sxsrf=ALiCzsa0ygA2RGuI8IED8uUpuO2PvLQ-uw:1665646639182&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiKsv-h2dz6AhUVH-wKHRfuAbEQ_AUoAXoECAIQAw&biw=1440&bih=805&dpr=2.4">Xalapa</a>,
-								where I did a BSc in Physics, although I returned to Mexico City to work on my BSc thesis at the Institute of Astronomy of 
-								the National University of Mexico.
-								<br>
-								<br> After that, I came to the Netherlands (lovely weather, amazing good, why not) to pursue an MSc degree in Astronomy at the University of
-								Groningen. I liked Groningen so much (er gaat niets boven Groningen!) that I stayed four more years for my PhD, which I obtained with 
-								cum laude distinction in the summer of 2022. As of September 2022, I moved to Leiden to hold a 
-								postdoctoral position at Leiden Observatory.
-								<br>
-								<br> I love science but also enjoy many other things. What I love doing the most is reading (Paul Auster is my favourite writer, 
-								The Tin Drum (G. Grass) arguably my favourite book, but you know one cannot just say what is their favourite book without feeling remorse for the others), 
-								and I also like a lot classical music (nothing like Tchaikovsky's violin concert), playing boardgames with friends (and ideally, but 
-								not necessarily, remaining friends afterwards), going to the cinema (even better if it's a Hugh Grant movie), as well as playing squash and basketball 
-								(go Spurs go!). Good food and nice wines (especially Italian wines, like a good Sangiovese) are also a must in my life.
-								
-							</p>	
-						</article>
-
-
-						<!-- Here is the "Research" card. -->
-						<article id="research">
-							<h2 class="major">Research</h2>
-							<span class="image main">
-								<img src="images/chichenitza.jpg" alt=""/>
-							</span>
-							<p>
-							My field of research is galaxy evolution. I am fascinated by the complexity and yet universality of the laws of physics 
-							that shape galaxies, and I am committed to the challenging task of understanding them. In particular, I am interested 
-							in how are the fundamental parameters of galaxies connected to each other, what are the main physical mechanisms 
-							regulating galaxy evolution, and how is the link between the baryonic component of galaxies and their host dark matter haloes.
-							<br>
-							
-							<br> My work is mostly observational (tho always try to compare with simulations!), and I use some of the most advanced 
-							facilities, namely optical and radio telescopes, often located in wonderful observatories. In the picture above, you can see
-								one of my favorite observatories, <a href="https://en.wikipedia.org/wiki/El_Caracol,_Chichen_Itza">El Caracol</a>, 
-								in the Mayan city of Chichén-Itzá. The observatory is not used anymore, but 
-								I am very proud to come from a country (Mexico) with such a rich astronomical heritage.
-													
-							<br>	
-							<br> Below, you can find some information on specific projects I have been working on recently. And in 
-								these links you can find <b>ADS libraries with my publications</b> as 
-								<a href="https://ui.adsabs.harvard.edu/user/libraries/4o0VeryyTWaF_zNqoaZyRA">First-author</a>
-								or as
-								<a href="https://ui.adsabs.harvard.edu/user/libraries/HQl90vsqTvioqi7Chl3iDA">Co-author</a>.
-							</p>
-							
-							<p>
-								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
-									the next line.
-								-->
-								
-								<b>Ultra-diffuse galaxies</b><br>Ultra-diffuse galaxies (UDGs) have the stellar mass of dwarf galaxies but light distributions 
-								similar to big spirals like the Milky Way, which makes them very diffuse. Their formation mechanisms (how do you form such an 
-								extended light distribution with so little stellar mass) have been widely discussed in the literature over the last years, but no consensus
-								has been reached. I have tackled the question from an observational perspective, looking both at the photometrical 
-								properties of UDGs in nearby galaxy clusters, and especially at the gas dynamics of isolated UDGs. 
-								<br>
-								<br> One of the main findings of my research is that gas-rich UDGs (see left panel in the figure below) deviate from the baryonic 
-								Tully-Fisher relation (see right panel), being this the first known galaxy population to do so. The position in the relation suggests that 
-								the galaxies have baryon fractions approaching the cosmological limit. Our kinematic observations have also unveiled that gas-rich UDGs seem 
-								to have dark matter haloes with inner densities much lower than expected in CDM.
-							</p>
-							
-							<!---	 <span class="img">
-								#<img src="images/chichenitza.jpg"   width="400" height="250"  alt=""/>
-								<img src="images/udgs_website.jpg" alt="test"/> 
-							</span> 		
-							-->
-							
-							<figure>
-  							<img src="images/udgs_website.jpg" alt="" style="width:100%">
- 							 <figcaption>
-								 <center> 
-								 <p style="color:DodgerBlue;">
-								 <i>Left: stellar (blue) and HI (green) emission in the gas-rich UDG AGC 114905 (Credits: J. Román and P. E. Mancera Pi&#241;a, 
-								 see <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.3230M/abstract">here</a>.). 
-								 Right: UDGs in the baryonic Tully-Fisher relation, from <a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...883L..33M/abstract">Mancera Pi&#241;a et al. 2022b</a>.) 
-								</i>  </p> </center>
-							</figcaption>
-							</figure> 
-							<br>
-							<br>
-						
-							
-							<p>
-								<b>Angular momentum in disc galaxies</b><br> From very early models of galaxy formation it became clear that 
-								together with the mass, angular momentum is a fundamental parameter regulating galaxy evolution. For example, the existence of the 
-								Fall relation (see image below) clearly shows the tight link between mass (M), specific angular momentum (j), and morphology.
-							</p>
-							
-							<center> 
-							<figure>
-  							<img src="images/fall_cortese.jpg" alt="" style="width:75%">
- 							 <figcaption>
-								 
-								 <p style="color:DodgerBlue;">
-								 <i> Relation between stellar mass, stellar specific angular momentum (j<sub>*</sub>-M<sub>*</sub>, 
-								the so-called Fall relation), and galaxy morphology. Credits: Luca Cortese. 
-								</i>  </p> 
-							</figcaption>
-							</figure> 
-								</center>
-								
-							<p>
-								<br> Together with my collaborators, I have been studying the angular momentum in nearby disc galaxies, obtaining some of 
-								the most detailed measurements of their stellar, gas, and baryonic specific angular momentum. As shown below, we have characterised 
-								the j-M relations across a wide range of mass, with the largest high-quality sample available in the literature 
-								(<a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..76M/abstract">see Mancera Pi&#241;a et al. 2021a</a>). Moreover, we have 
-								discovered one of the tightest known scaling relations for disc galaxies, connecting their baryonic mass, baryonic specific angular 
-								momentum, and the gas fraction of galaxies (<a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...651L..15M/abstract">see Mancera Pi&#241;a et al. 2021a</a>). 
-								This is quite remarkable, given the large number of processes that can affect the angular 
-								momentum reservoir of galaxies, such as feedback, different gas accretion histories, mergers, or dynamical friction, and yet it all results
-								in a very tight scaling relation. Our observations provide clear observational tests for models and simulations aiming to reproduce 
-								realistic galaxies.
-								
-							</p>
-							
-							<figure>
-  							<img src="images/jM.jpg" alt="" style="width:100%">
- 							 <figcaption>
-								 <center> 
-								 <p style="color:DodgerBlue;">
-								 <i> Relations between specific angular momentum and mass for the stars, gas, and baryons in a sample of nearby disc galaxies. 
-								    From <a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..76M/abstract">Mancera Pi&#241;a et al. 2021a</a>.
-								</i>  </p> </center>
-							</figcaption>
-							</figure> 
-							<br>
-							<br>
-							
-							<p>
-								<b>The scaleheights of gas discs</b><br>While the gas discs of late-type galaxies are often assumed to be thin, observations in edge-on 
-								galaxies show that the discs are actually thick, with a scaleheight that increases as a function of radius, i.e. the discs are flared. 
-								This flaring is a direct consequence of the balance between gas pressure and gravity (see sketch below), and we can use the equations of vertical hydrostatic 
-								equilibrium to estimate the flaring in any galaxy.
-								
-							</p>
-							
-							<center> 
-							<figure>
-  							<img src="images/scaleheight.png" alt="" style="width:50%">
- 							 <figcaption>
-								 <center> 
-								 <p style="color:DodgerBlue;">
-								 <i> Sketch of the gas flaring resulting from the balance between gas pressure and gravity. The gas discs of galaxies flared with 
-									 radius, which has important implications for our understanding of ISM properties and, in the case of low-mass gas-rich systems,
-									 their dynamics. Credits: Cecilia Bacchini.
-								</i>  </p> </center>
-							</figcaption>
-							</figure> 
-							</center> 
-							<br> During my research, I have designed a method to estimate the flaring of nearby disc galaxies (based on the equations of vertical
-							hydrostatic equilibrium) while simultaneously deriving their mass model based on rotation curve decomposition. This has allowed me to 
-							obtain some of the most detailed scale heights and mass models of massive and dwarf late-type galaxies, as shown in 
-							<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.514.3329M/abstract">Mancera Pi&#241;a et al. 2022b</a>. These mass 
-							models are also an excellent tool to test different models of galaxy evolution, as they provide clear constraints on the parameters
-							of the dark matter haloes of our galaxy sample.
-							
-						</article>
-
-						<!-- Here is the "Community" card. -->
-						<article id="downloads">
-							<h2 class="major">Downloads</h2>
-							<span class="image main">
-								<img src="images/me_mountain.jpg" alt=""/>
-							</span>
-							<p>
-							<br> Throwing some data at you... In this section, you can find some interesting data associated with my published papers. 
-							     If I used some data you are interested in that are not here, please get in touch and I will be
-							     happy to share them!
-							</p>
-							<p>
-								<b>PhD thesis:</b> At
-								<a href="data_to_share/Complete_thesis_compressed.pdf">this link</a> 
-								you can find the official version of my PhD thesis "Dark matter and angular momentum in nearby disc galaxies",
-								successfully defended in Summer 2022. The thesis was supervised by Filippo Fraternali, Tom Oosterloo, and Betsey Adams.
-								The reading committee was integrated by James Binney, Kristine Spekkens, and Thijs van der Hulst. The thesis got 
-								cum laude distinction.
-							</p>
-							
-							<p>
-								<b>Angular momentum catalogues:</b> In
-								<a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..76M/abstract">Mancera Pi&#241;a+21a</a> and 
-								<a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...651L..15M/abstract">Mancera Pi&#241;a+21b</a> we performed some of the most 
-								detailed measurements of the stellar, gas, and baryonic specific angular momenta of nearby disc galaxies. 
-								<a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/647/A76">In this link</a> you can find the 
-								catalogue for the first paper, characterising the j-M (specific angular momentum-mass) relations. And in 
-								<a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/651/L15">this other link</a> you can download the 
-								catalogue for the second paper, in which we have discovered a tight scaling relation between j, M, and the gas fraction of the galaxies.
-							</p>
-							<p>
-								<b>Gas scaleheights and mass models:</b> Download <a href="data_to_share/stac1508_supplemental_files.zip" target="_blank">here</a> 
-								the plots of the mass models (and posterior distributions), and the tables with all the gas scaleheights for a sample of 32 
-								nearby dwarf and massive disc galaxies, as presented in
-								<a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.514.3329M/abstract">Mancera Pi&#241;a+22b</a>. If you also want the 
-								kinematics (rotation curves, gas velocity dispersion profiles) or the mass models (contribution to the circular speed from the 
-								dark matter and different baryonic components) please get in touch, and I will be happy to share them.
-							</p>
-							
-							<p> 
-								<b>Kinematics of dwarf galaxies:</b>  Download <a href="data_to_share/rotcurv_dwarfs_MP21a.zip" target="_blank">here</a> 
-								the kinematic parameters (rotation curves, circular speeds, HI velocity dispersion profiles) of the 21 dwarf galaxies 
-								derived in 
-								<a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..76M/abstract">Mancera Pi&#241;a+21a</a>.
-							</p>	
-							
-							
-							<p>
-								<b>Ultra-diffuse galaxies in clusters:</b> <a href="data_to_share/KIWICS.zip" target="_blank">Photometric catalogue</a> for about 500 ultra-diffuse galaxies in
-								nearby galaxy clusters from the KIWICS survey.
-								For details see 
-								<a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.1036M/abstract">Mancera Pi&#241;a+19a</a> and 
-								<a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.481.4381M/abstract">Mancera Pi&#241;a+18</a>.
-							</p>
-				
-						</article>
-
-						<!-- Here is the "Press" card. -->
-						<article id="press">
-							<h2 class="major">News, press releases, ...</h2>
-							<span class="image main">
-								<img src="images/starrynight1.jpg" alt=""/>
-							</span>
-							<p>
-							<br> Some results from my research have been picked up by popular media as press releases. 
-							     Here you can find some of them. You can also find some news about me or my research.
-							</p>
-							<hr style="height:2px;border-width:0;color:gray;background-color:gray">
-
-
-
-							<li>
-							Recently, I have been awarded a VENI Fellowship by the Dutch Research Council (NWO).
-							This fellowship funds my independent research programme aimed at measuring the dynamics of
-							galaxies through cosmic time using the most advanced observational facilities to obtain an 
-							unprecedented view into the role of the mysterious dark matter in shaping galaxies. You can find
-								more information in this
-								<a href="https://www.universiteitleiden.nl/en/news/2023/08/uncovering-galaxy-evolution-and-the-nature-of-dark-matter?fbclid=IwAR2riYbCKnY8QXaRsydz2lgjdRfoMoMc6c_Db92oC7VrSAw--qckMngu4l8">link</a>.
-								
-				
-								
-							</li>
-
-							
-							<li>
-							I won the 2022 Van Swinderen Prize! Thanks to the Koninklijk Natuurkundig Genootschap:) Here some 
-								<a href="https://www.kng-groningen.nl/van-swinderenprijs/">more info</a>.
-								
-								<center> 								
-							<figure>
-  							<img src="images/vanswinderen.jpg" alt="" style="width:80%">
- 
-							</figure> 								
-							</center>
-								
-								
-							</li>
-							
-														<li>
-							An ultra-diffuse galaxy challenging the cold dark matter model? Articles from 
-							<a href="https://www.scientificamerican.com/article/dark-matter-may-be-missing-from-this-newfound-galaxy-astronomers-say/">Scientific American</a>, 
-								<a href="https://www.wired.com/story/astronomers-discover-a-strange-galaxy-without-dark-matter/">WIRED</a>, 
-								<a href="https://www.popsci.com/science/galaxy-missing-dark-matter/">Popular Science</a>, 
-								<a href="https://ras.ac.uk/news-and-press/research-highlights/evidence-emerges-dark-matter-free-galaxies">MNRAS</a>, and also 
-							in <a href="https://www.astronomie.nl/nieuws/zelfs-na-40-uur-extra-scherp-meten-geen-spoor-van-donkere-materie-bij-sterrenstelsel-agc-114905-3058">Dutch</a> by NOVA. 
-							There are many more results from different media if you look for the galaxy AGC 114905, including press notes in 
-							Spanish, Italian, French, Portuguese, Chineese, German, among many others.
-							
-							<center> 								
-							<figure>
-  							<img src="images/agc114905_pr.png" alt="" style="width:50%">
- 							 <figcaption>
-								 
-								 <p style="color:DodgerBlue;">
-								 <i>Left: stellar (blue) and HI (green) emission in the gas-rich UDG AGC 114905 (Credits: J. Román and P. E. Mancera Pi&#241;a, 
-								 see <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.3230M/abstract">here</a>.). 
-								 Right: UDGs in the baryonic Tully-Fisher relation, from <a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...883L..33M/abstract">Mancera Pi&#241;a et al. 2022b</a>.) 
-								</i>  </p> 
-							</figcaption>
-							</figure> 								
-							</center>								
-							</li>
-							
-							<li>
-							Six galaxies discovered to have little dark matter, read it in 
-								<a href="https://www.rug.nl/news/2019/09/zes-sterrenstelsels-ontdekt-met-amper-donkere-materie?lang=en">English</a> 
-								or <a href="https://www.astronomie.nl/nieuws/zes-sterrenstelsels-ontdekt-met-amper-donkere-materie-1407">Dutch</a> .
-							</li>
-
-							
-							
-							
-						</article>
-				
-				<!-- Here is a the "Contact" card. -->
-						<article id="contact">
-							<h2 class="major">Contact</h2>
-							<p> 
-								<b>Email:</b> pavel@strw.leidenuniv.nl
-							</p>
-							<p> 
-								<b>Address:</b> 
-										<br>Leiden Observatory
-										<br> J.H. Oort Building
-										<br> Niels Bohrweg 2
-										<br> NL-2333 CA Leiden
-										<br> The Netherlands
-							</p>
-								<p> 
-								<b>References:</b> 
-										<br> &#8211; Prof. Filippo Fraternali, University of Groningen, fraternali@astro.rug.nl
-										<br> &#8211; Prof. James Binney, University of Oxford, james.binney@physics.ox.ac.uk
-										<br> &#8211; Prof. Tom Oosterloo, ASTRON, the Nederlands Institute for Radio Astronomy, oosterloo@atron.nl
-										<br> &#8211; Dr. Elizabeth A. K. Adams, ASTRON, the Nederlands Institute for Radio Astronomy, adams@atron.nl
-							</p>
-							
-							<!-- 	Here are the fancy icons that link to your social media.
-								These icons are rendered using Font Awesome fonts, and you can find more icons
-								here: https://fontawesome.com/icons
-							-->
-							<ul class="icons">
-								<!-- The Twitter icon -->
-								<li>
-									<!-- 	Note that you need to change the link to point to your page.
-										Replace "#" with your Twitter profile page.
-									-->
-									<a href="https://twitter.com/pavel_mancera" class="icon fa-twitter">
-										<span class="label">Twitter</span>
-									</a>
-								</li>
-								
-								<!-- The orcid icon -->
-								<li>
-									<!-- 	Note that you need to change the link to point to your page.
-										Replace "#" with your Twitter profile page.
-									-->
-									<a href="https://orcid.org/0000-0001-5175-939X" class="fa-brands fa-orcid">
-										<span class="label">orcid</span>
-									</a>
-								</li>
-								<!-- 	We can add a new icon by searching on the Font Awesome website
-									for the correct class name and inserting it as a new list item.
-
-									We found "envelope" here: https://fontawesome.com/icons/envelope
-								-->
-								<!-- <li>
-									<a href="#" class="icon fa-envelope">
-										<span class="label">Email</span>
-									</a>
-								</li> -->
-							</ul>
-						</article>
+				<article id="downloads">
+					<h2 class="major">Downloads</h2>
+					<span class="image main">
+						<img src="images/me_mountain.jpg" alt="Pavel in the mountains"/>
+					</span>
+					
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Resource</th>
+									<th>Description</th>
+									<th>Download</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>PhD Thesis</td>
+									<td>"Dark matter and angular momentum in nearby disc galaxies"</td>
+									<td><a href="data_to_share/Complete_thesis_compressed.pdf" class="button small icon solid fa-download">PDF</a></td>
+								</tr>
+								<tr>
+									<td>Angular Momentum Catalog</td>
+									<td>j-M relations for nearby disc galaxies</td>
+									<td><a href="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A+A/647/A76" class="button small icon solid fa-download">Data</a></td>
+								</tr>
+								<tr>
+									<td>Gas Scale Heights</td>
+									<td>Mass models and scale heights for 32 galaxies</td>
+									<td><a href="data_to_share/stac1508_supplemental_files.zip" class="button small icon solid fa-download">Zip</a></td>
+								</tr>
+								<tr>
+									<td>Dwarf Galaxy Kinematics</td>
+									<td>Rotation curves for 21 dwarf galaxies</td>
+									<td><a href="data_to_share/rotcurv_dwarfs_MP21a.zip" class="button small icon solid fa-download">Zip</a></td>
+								</tr>
+								<tr>
+									<td>UDG Cluster Catalog</td>
+									<td>500 UDGs in nearby clusters (KIWICS)</td>
+									<td><a href="data_to_share/KIWICS.zip" class="button small icon solid fa-download">Zip</a></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
+				</article>
 
-					<!-- This is the footer that appears at the bottom of the page -->
-					<footer id="footer">
-						<!-- 	You can change "Untitled" to your name to show everyone that
-							this is your work.
-						-->
-						<p class="copyright">&copy; Pavel E. Mancera Pi&#241;a (ft. Vincent van Gogh). Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+				<article id="press">
+					<h2 class="major">News & Press</h2>
+					<span class="image main">
+						<img src="images/starrynight1.jpg" alt="Starry Night"/>
+					</span>
+					
+					<div class="press-highlights">
+						<div class="press-item">
+							<h3>NWO Veni Fellowship Award</h3>
+							<p>Recently awarded a prestigious VENI Fellowship to study galaxy dynamics and dark matter. <a href="https://www.universiteitleiden.nl/en/news/2023/08/uncovering-galaxy-evolution-and-the-nature-of-dark-matter">Read more</a></p>
+							<span class="image fit"><img src="images/vanswinderen.jpg" alt="Van Swinderen Prize"/></span>
+						</div>
+						
+						<div class="press-item">
+							<h3>Van Swinderen Prize 2022</h3>
+							<p>Honored with the Van Swinderen Prize for outstanding PhD research. <a href="https://www.kng-groningen.nl/van-swinderenprijs/">Details</a></p>
+						</div>
+						
+						<div class="press-item">
+							<h3>Dark Matter-Deficient Galaxies</h3>
+							<p>Media coverage of our UDG research:</p>
+							<ul class="actions">
+								<li><a href="https://www.scientificamerican.com/article/dark-matter-may-be-missing-from-this-newfound-galaxy-astronomers-say/" class="button small">Scientific American</a></li>
+								<li><a href="https://www.wired.com/story/astronomers-discover-a-strange-galaxy-without-dark-matter/" class="button small">WIRED</a></li>
+								<li><a href="https://www.astronomie.nl/nieuws/zelfs-na-40-uur-extra-scherp-meten-geen-spoor-van-donkere-materie-bij-sterrenstelsel-agc-114905-3058" class="button small">NOVA (Dutch)</a></li>
+							</ul>
+							<span class="image fit"><img src="images/agc114905_pr.png" alt="UDG Press Image"/></span>
+						</div>
+						
+						<div class="press-item">
+							<h3>Six Galaxies with Little Dark Matter</h3>
+							<p>Covered in <a href="https://www.rug.nl/news/2019/09/zes-sterrenstelsels-ontdekt-met-amper-donkere-materie?lang=en">English</a> and <a href="https://www.astronomie.nl/nieuws/zes-sterrenstelsels-ontdekt-met-amper-donkere-materie-1407">Dutch</a> media.</p>
+						</div>
+					</div>
+				</article>
 
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<div class="contact-info">
+						<div class="contact-method">
+							<span class="icon solid fa-envelope"></span>
+							<h3>Email</h3>
+							<a href="mailto:pavel@strw.leidenuniv.nl">pavel@strw.leidenuniv.nl</a>
+						</div>
+						
+						<div class="contact-method">
+							<span class="icon solid fa-map-marker-alt"></span>
+							<h3>Address</h3>
+							<p>
+								Leiden Observatory<br>
+								J.H. Oort Building<br>
+								Niels Bohrweg 2<br>
+								NL-2333 CA Leiden<br>
+								The Netherlands
+							</p>
+						</div>
+						
+						<div class="contact-method">
+							<span class="icon solid fa-user-tie"></span>
+							<h3>References</h3>
+							<ul class="references">
+								<li>Prof. Filippo Fraternali<br>University of Groningen<br>fraternali@astro.rug.nl</li>
+								<li>Prof. James Binney<br>University of Oxford<br>james.binney@physics.ox.ac.uk</li>
+								<li>Prof. Tom Oosterloo<br>ASTRON<br>oosterloo@astron.nl</li>
+								<li>Dr. Elizabeth A. K. Adams<br>ASTRON<br>adams@astron.nl</li>
+							</ul>
+						</div>
+					</div>
+					
+					<ul class="icons">
+						<li><a href="https://twitter.com/pavel_mancera" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://orcid.org/0000-0001-5175-939X" class="icon brands fa-orcid"><span class="label">ORCID</span></a></li>
+						<li><a href="https://github.com/yourusername" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://linkedin.com/in/yourprofile" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</article>
 			</div>
 
-			<!--	This is the background image of the site.
-				All configuration of the background is done with CSS.
-				Look in the file assets/css/main.css and search for "#bg" to
-				see how this element is styled. Look for comments pointing 
-				to where you can set a new background image.
-			-->
-			<div id="bg"></div>
+			<footer id="footer">
+				<p class="copyright">&copy; Pavel E. Mancera Piña. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</footer>
+		</div>
 
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<div id="bg"></div>
 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
