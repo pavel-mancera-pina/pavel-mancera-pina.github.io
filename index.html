@@ -131,6 +131,28 @@
 					padding: 1.5rem;
 				}
 			}
+
+			/* FRIDA table styling */
+.frida-table th,
+.frida-table td {
+	text-align: center;
+}
+
+.frida-table th:first-child,
+.frida-table td:first-child {
+	text-align: left;
+	font-weight: 600;
+}
+
+.frida-table a {
+	color: var(--primary-color);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.frida-table a:hover {
+	color: var(--secondary-color);
+}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -155,6 +177,7 @@
 						<li><a href="#about">About Me</a></li>
 						<li><a href="#research">Research</a></li>
 						<li><a href="#downloads">Downloads</a></li>
+						<li><a href="#frida">FRIDA</a></li> 
 						<li><a href="#press">News & Press</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
@@ -359,6 +382,56 @@
 					</div>
 				</article>
 
+				<article id="frida">
+	<h2 class="major">FRIDA</h2>
+
+	<p>
+		bla bla bla. This section contains moment maps and data cubes for selected galaxies.
+		Click on a given moment to download the corresponding FITS file.
+	</p>
+
+	<div class="table-wrapper">
+		<table class="frida-table">
+			<thead>
+				<tr>
+					<th>Galaxy</th>
+					<th>Moment 0</th>
+					<th>Moment 1</th>
+					<th>Moment 2</th>
+					<th>Data Cube</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr>
+					<td>Galaxy A</td>
+					<td><a href="frida_data/galaxyA_mom0.fits" target="_blank">mom0</a></td>
+					<td><a href="frida_data/galaxyA_mom1.fits" target="_blank">mom1</a></td>
+					<td><a href="frida_data/galaxyA_mom2.fits" target="_blank">mom2</a></td>
+					<td><a href="frida_data/galaxyA_cube.fits" target="_blank">cube</a></td>
+				</tr>
+
+				<tr>
+					<td>Galaxy B</td>
+					<td><a href="frida_data/galaxyB_mom0.fits" target="_blank">mom0</a></td>
+					<td><a href="frida_data/galaxyB_mom1.fits" target="_blank">mom1</a></td>
+					<td><a href="frida_data/galaxyB_mom2.fits" target="_blank">mom2</a></td>
+					<td><a href="frida_data/galaxyB_cube.fits" target="_blank">cube</a></td>
+				</tr>
+
+				<tr>
+					<td>Galaxy C</td>
+					<td><a href="frida_data/galaxyC_mom0.fits" target="_blank">mom0</a></td>
+					<td><a href="frida_data/galaxyC_mom1.fits" target="_blank">mom1</a></td>
+					<td><a href="frida_data/galaxyC_mom2.fits" target="_blank">mom2</a></td>
+					<td><a href="frida_data/galaxyC_cube.fits" target="_blank">cube</a></td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+</article>
+
 				<article id="press">
 					<h2 class="major">News & Press</h2>
 					<span class="image main">
@@ -460,3 +533,4 @@
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
+
