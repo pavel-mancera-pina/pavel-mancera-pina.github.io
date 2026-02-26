@@ -258,6 +258,23 @@
 .frida-table a:hover {
 	color: var(--secondary-color);
 }
+
+		/* --- Fix content link visibility (does NOT affect nav/buttons) --- */
+#main a:not(.button):not(.highlight) {
+	color: var(--primary-color) !important;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+#main a:not(.button):not(.highlight):hover {
+	color: var(--secondary-color) !important;
+}
+
+/* Keep "highlight" links visible and not black */
+#main a.highlight {
+	color: transparent !important;            /* uses your gradient text */
+	-webkit-text-fill-color: transparent;
+}	
 		</style>
 	</head>
 	<body class="is-preload">
@@ -588,6 +605,7 @@
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
+
 
 
 
