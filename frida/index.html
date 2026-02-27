@@ -10,35 +10,58 @@
 	<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
 	<style>
-		/* Make the main content visible in this standalone page */
-		#main {
-			display: block !important;
-		}
-		#main > article {
-			display: block !important;
-			opacity: 1 !important;
-			transform: none !important;
-		}
 
-		/* Card look consistent with your main site */
-		#main article {
-			background: white;
-			border-radius: 10px;
-			box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-			padding: 2.5rem;
-		}
+/* Force article visible (HTML5UP override) */
+#main {
+	display: block !important;
+}
+#main > article {
+	display: block !important;
+	opacity: 1 !important;
+	transform: none !important;
+}
 
-		/* FRIDA table styling */
-		.frida-table th,
-		.frida-table td {
-			text-align: center;
-		}
-		.frida-table th:first-child,
-		.frida-table td:first-child {
-			text-align: left;
-			font-weight: 600;
-		}
-	</style>
+/* REMOVE white card background */
+#main article {
+	background: rgba(0, 0, 0, 0.65);   /* dark translucent panel */
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+	padding: 2.5rem;
+	color: white;
+}
+
+/* Ensure text is white */
+#main p,
+#main h2,
+#main th,
+#main td {
+	color: white !important;
+}
+
+/* FRIDA table styling */
+.frida-table th,
+.frida-table td {
+	text-align: center;
+}
+
+.frida-table th:first-child,
+.frida-table td:first-child {
+	text-align: left;
+	font-weight: 600;
+}
+
+/* Make FITS links visible */
+.frida-table a {
+	color: #4fc3f7 !important;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.frida-table a:hover {
+	color: #81d4fa !important;
+}
+
+</style>
 </head>
 
 <body class="is-preload">
