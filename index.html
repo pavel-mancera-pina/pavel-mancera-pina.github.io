@@ -8,190 +8,190 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<meta name="google-site-verification" content="BvSSNoffoAMwrO8FZVqQHL1AizzvzOjxkJzyCi57QrU" />
-		<style><tbody>
+<style>
+	:root {
+		--primary-color: #3498db;
+		--secondary-color: #2ecc71;
+		--accent-color: #e74c3c;
+		--dark-color: #2c3e50;
+		--light-color: #ecf0f1;
+	}
 
+	/* Header styling - made more transparent */
+	#header {
+		background: rgba(44, 62, 80, 0.85);
+	}
 
-			:root {
-				--primary-color: #3498db;
-				--secondary-color: #2ecc71;
-				--accent-color: #e74c3c;
-				--dark-color: #2c3e50;
-				--light-color: #ecf0f1;
-			}
-			
-			/* Header styling - made more transparent */
-			#header {
-				background: rgba(44, 62, 80, 0.85);
-			}
-			
-			/* Card styling */
-			article {
-				background: white;
-				border-radius: 10px;
-				box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-				padding: 2.5rem;
-			}
-			
-			/* Section headers */
-			h2.major {
-				color: var(--primary-color);
-				border-bottom: 3px solid var(--secondary-color);
-				padding-bottom: 0.5rem;
-			}
-			
-			/* Navigation buttons */
-			nav ul li a {
-				background: var(--primary-color);
-				color: white !important;
-				border-radius: 5px;
-				transition: all 0.3s ease;
-			}
-			
-			nav ul li a:hover {
-				background: var(--secondary-color);
-				transform: translateY(-3px);
-			}
-			
-			/* Profile image */
-			#header .inner img {
-				border: 5px solid white;
-				box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-			}
-			
-			/* Footer styling */
-			#footer {
-				background: var(--dark-color);
-				color: white;
-				padding: 2rem;
-			}
-			
-			/* Colorful highlights */
-			.highlight {
-				background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
-				-webkit-background-clip: text;
-				background-clip: text;
-				color: transparent;
-				font-weight: bold;
-			}
-			
-			/* Timeline styling */
-			.timeline {
-				position: relative;
-				padding-left: 30px;
-				margin: 1em 0;
-			}
-			
-			.timeline:before {
-				content: '';
-				position: absolute;
-				left: 6px;
-				top: 0;
-				bottom: 0;
-				width: 3px;
-				background: var(--primary-color);
-			}
-			
-			.timeline-item {
-				position: relative;
-				margin-bottom: 1.5em;
-			}
-			
-			.timeline-item:before {
-				content: '';
-				position: absolute;
-				left: -30px;
-				top: 5px;
-				width: 15px;
-				height: 15px;
-				border-radius: 50%;
-				background: var(--secondary-color);
-				border: 3px solid white;
-			}
-			
-			/* Publication cards - fixed contrast */
-			.publication-card {
-				background: #f8f9fa;
-				padding: 1rem;
-				margin: 1rem 0;
-				border-left: 4px solid var(--primary-color);
-				border-radius: 0 5px 5px 0;
-				color: #333 !important;
-			}
-			
-			.publication-card a {
-				color: var(--primary-color) !important;
-			}
-			
-			/* Research section spacing */
-			.research-section {
-				margin-bottom: 2rem;
-			}
-			
-			/* Responsive adjustments */
-			@media screen and (max-width: 736px) {
-				article {
-					padding: 1.5rem;
-				}
-			}
+	/* Card styling */
+	article {
+		background: white;
+		border-radius: 10px;
+		box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+		padding: 2.5rem;
+	}
 
-			/* FRIDA table styling */
-.frida-table th,
-.frida-table td {
-	text-align: center;
-}
+	/* Section headers */
+	h2.major {
+		color: var(--primary-color);
+		border-bottom: 3px solid var(--secondary-color);
+		padding-bottom: 0.5rem;
+	}
 
-.frida-table th:first-child,
-.frida-table td:first-child {
-	text-align: left;
-	font-weight: 600;
-}
+	/* Navigation buttons */
+	nav ul li a {
+		background: var(--primary-color);
+		color: white !important;
+		border-radius: 5px;
+		transition: all 0.3s ease;
+	}
 
-.frida-table a {
-	color: var(--primary-color);
-	font-weight: 600;
-	text-decoration: none;
-}
+	nav ul li a:hover {
+		background: var(--secondary-color);
+		transform: translateY(-3px);
+	}
 
-.frida-table a:hover {
-	color: var(--secondary-color);
-}
+	/* Profile image */
+	#header .inner img {
+		border: 5px solid white;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	}
 
-		/* --- Fix content link visibility (does NOT affect nav/buttons) --- */
-#main a:not(.button):not(.highlight) {
-	color: var(--primary-color) !important;
-	border-bottom: none;
-	text-decoration: none;
-}
+	/* Footer styling */
+	#footer {
+		background: var(--dark-color);
+		color: white;
+		padding: 2rem;
+	}
 
-#main a:not(.button):not(.highlight):hover {
-	color: var(--secondary-color) !important;
-}
+	/* Colorful highlights (for TEXT, not for links) */
+	.highlight {
+		background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
 
-/* Keep "highlight" links visible and not black */
-#main a.highlight {
-	color: transparent !important;            /* uses your gradient text */
-	-webkit-text-fill-color: transparent;
-}	
-			/* --- Link visibility fixes (do NOT affect nav/buttons) --- */
+	/* If you use class="highlight" on <a>, make it a normal readable link */
+	a.highlight {
+		background: none !important;
+		-webkit-background-clip: initial !important;
+		background-clip: initial !important;
+		color: var(--primary-color) !important;
+		-webkit-text-fill-color: var(--primary-color) !important;
+		font-weight: 700;
+		text-decoration: none;
+		border-bottom: 1px dotted rgba(52, 152, 219, 0.65);
+	}
 
-/* Regular links inside articles */
-#main a:not(.button) {
-	color: var(--primary-color) !important;
-	text-decoration: none;
-	border-bottom: none;
-}
+	a.highlight:hover {
+		color: var(--secondary-color) !important;
+		-webkit-text-fill-color: var(--secondary-color) !important;
+		border-bottom-color: rgba(46, 204, 113, 0.8);
+	}
 
-#main a:not(.button):hover {
-	color: var(--secondary-color) !important;
-}
+	/* Make normal content links look like links (not nav/buttons) */
+	#main article a:not(.button) {
+		color: var(--primary-color);
+		text-decoration: none;
+		border-bottom: 1px dotted rgba(52, 152, 219, 0.65);
+	}
 
-/* IMPORTANT: Don't make link text transparent */
-#main a.highlight {
-	color: var(--primary-color) !important;
-	-webkit-text-fill-color: initial !important;
-	background: none !important;
-}
-		</style>
+	#main article a:not(.button):hover {
+		color: var(--secondary-color);
+		border-bottom-color: rgba(46, 204, 113, 0.8);
+	}
+
+	/* Timeline styling */
+	.timeline {
+		position: relative;
+		padding-left: 30px;
+		margin: 1em 0;
+	}
+
+	.timeline:before {
+		content: '';
+		position: absolute;
+		left: 6px;
+		top: 0;
+		bottom: 0;
+		width: 3px;
+		background: var(--primary-color);
+	}
+
+	.timeline-item {
+		position: relative;
+		margin-bottom: 1.5em;
+	}
+
+	.timeline-item:before {
+		content: '';
+		position: absolute;
+		left: -30px;
+		top: 5px;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background: var(--secondary-color);
+		border: 3px solid white;
+	}
+
+	/* Publication cards - fixed contrast */
+	.publication-card {
+		background: #f8f9fa;
+		padding: 1rem;
+		margin: 1rem 0;
+		border-left: 4px solid var(--primary-color);
+		border-radius: 0 5px 5px 0;
+		color: #333 !important;
+	}
+
+	.publication-card a {
+		color: var(--primary-color) !important;
+		border-bottom: 1px dotted rgba(52, 152, 219, 0.65);
+	}
+
+	.publication-card a:hover {
+		color: var(--secondary-color) !important;
+		border-bottom-color: rgba(46, 204, 113, 0.8);
+	}
+
+	/* Research section spacing */
+	.research-section {
+		margin-bottom: 2rem;
+	}
+
+	/* Responsive adjustments */
+	@media screen and (max-width: 736px) {
+		article {
+			padding: 1.5rem;
+		}
+	}
+
+	/* FRIDA table styling (if FRIDA table is still in index.html anywhere) */
+	.frida-table th,
+	.frida-table td {
+		text-align: center;
+	}
+
+	.frida-table th:first-child,
+	.frida-table td:first-child {
+		text-align: left;
+		font-weight: 600;
+	}
+
+	.frida-table a {
+		color: var(--primary-color);
+		font-weight: 600;
+		text-decoration: none;
+		border-bottom: 1px dotted rgba(52, 152, 219, 0.65);
+	}
+
+	.frida-table a:hover {
+		color: var(--secondary-color);
+		border-bottom-color: rgba(46, 204, 113, 0.8);
+	}
+</style>
 	</head>
 	<body class="is-preload">
 
@@ -521,6 +521,7 @@
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
+
 
 
 
